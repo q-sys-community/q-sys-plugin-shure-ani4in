@@ -12,7 +12,6 @@ Control plugin for the Shure ANI4IN Audio Network Interface
 - Input clip LED
 - Toggle input mute
 - Toggle phantom power
-- Toggle output mute
   
 ## Untested features
 
