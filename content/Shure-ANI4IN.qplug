@@ -789,7 +789,6 @@ if Controls then
         end
         for i = 1, input_count do
             Controls["input_gain_" .. i].EventHandler = function()
-                print(string.format("%04d", Controls["input_gain_" .. i].Value))
                 fnSend(
                     "SET " .. i .. " AUDIO_GAIN_HI_RES " .. string.format("%04d", Controls["input_gain_" .. i].Value)
                 )
@@ -802,7 +801,6 @@ if Controls then
                 end
             end
             Controls["input_analog_gain_" .. i].EventHandler = function()
-                print(string.format("%02d", (3 * Controls["input_analog_gain_" .. i].Value)))
                 fnSend(
                     "SET " ..
                         i .. " AUDIO_GAIN " .. string.format("%02d", (3 * Controls["input_analog_gain_" .. i].Value))
